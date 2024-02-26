@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anna Vitória Viana dos Santos - Desenvolvedora Front-End</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+                color: #fff;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            h1 {
+                color: #ff69b4;
+                margin-top: 20px;
+            }
+
+            img {
+                width: 150px; /* Ajuste o tamanho conforme necessário */
+                border-radius: 50%; /* Para arredondar a imagem */
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin-top: 20px;
+            }
+
+            .highlight {
+                color: #ff69b4;
+                font-weight: bold;
+            }
+
+            footer {
+                background-color: #ff69b4;
+                padding: 20px 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .scroll-button {
+                background-color: #ff69b4;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+
+            .scroll-button:hover {
+                background-color: #ff1493;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container" id="pergunta1">
+            <img
+                src="C:\Users\Acer\Downloads\imagem.png"
+                alt="Anna Vitória Viana dos Santos"
+            />
+            <h1>Anna Vitória Viana dos Santos</h1>
+            <p>Olá! Vamos criar uma página personalizada para você.</p>
+            <button
+                class="scroll-button"
+                onclick="scrollToElement('pergunta2')"
+            >
+                Próxima Pergunta
+            </button>
+        </div>
+
+        <div class="container" id="pergunta2">
+            <h1>Estudos em Tecnologia da Informação</h1>
+            <p>
+                Atualmente, estou no 3º semestre do curso de Análise e
+                Desenvolvimento de Sistemas. Estou muito empolgada em aprender e
+                crescer com esse curso, buscando adquirir o máximo de
+                conhecimento e experiência possível.
+            </p>
+            <button
+                class="scroll-button"
+                onclick="scrollToElement('pergunta3')"
+            >
+                Próxima Pergunta
+            </button>
+        </div>
+
+        <div class="container" id="pergunta3">
+            <h1>Área de Interesse</h1>
+            <p>
+                Minha área de interesse é desenvolvimento front-end e back-end.
+                Estou determinada a conseguir uma vaga nesse mercado e me
+                qualificar continuamente para acompanhar as tendências e as
+                demandas do setor.
+            </p>
+            <button
+                class="scroll-button"
+                onclick="scrollToElement('pergunta4')"
+            >
+                Próxima Pergunta
+            </button>
+        </div>
+
+        <div class="container" id="pergunta4">
+            <h1>Redes Sociais</h1>
+            <p>
+                Você pode me encontrar no Instagram:
+                <span class="highlight">@anna_vianavivi</span>
+            </p>
+        </div>
+
+        <footer>
+            <p>
+                &copy; 2024 Anna Vitória Viana dos Santos - Todos os direitos
+                reservados.
+            </p>
+        </footer>
+
+        <script>
+            function scrollToElement(elementId) {
+                var element = document.getElementById(elementId);
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+    </body>
+</html>
